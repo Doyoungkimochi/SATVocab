@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Sandwiches</string>
+    <string name="word_correct_text">Correct Word</string>
+    <string name="defn_text">Definition</string>
+    <string name="button_next">Next</string>
+    <string name="word_wrong_text1">Wrong Definition1</string>
+    <string name="word_wrong_text2">Wrong Definition2</string>
+    <string name="button_submit">Submit</string>
+    <string name="button_show_links">Show Links</string>
+</resources>

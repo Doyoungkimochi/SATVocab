@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.pamkim.sandwiches.VocabQuiz">
+
+    <TextView
+        android:id="@+id/time_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="11dp"
+        android:text="TextView"
+        tools:text="Time Left" />
+
+    <TextView
+        android:id="@+id/defn_text"
+        android:layout_width="match_parent"
+        android:layout_height="100sp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/time_view"
+        android:text="@string/defn_text"
+        android:textColor="@android:color/holo_blue_light"
+        android:textSize="20sp" />
+
+
+    <RadioGroup
+        android:id="@+id/buttons_radiogroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:baselineAligned="false"
+        android:gravity="center_vertical">
+
+        <RadioButton
+            android:id="@+id/word_wrong_text1"
+            android:layout_width="367dp"
+            android:layout_height="71dp"
+            android:layout_marginBottom="20dp"
+            android:text="@string/word_wrong_text1" />
+
+
+        <RadioButton
+            android:id="@+id/word_correct_text"
+            android:layout_width="match_parent"
+            android:layout_height="66dp"
+            android:layout_marginBottom="20dp"
+            android:text="@string/word_correct_text" />
+
+        <RadioButton
+            android:id="@+id/word_wrong_text2"
+            android:layout_width="match_parent"
+            android:layout_height="79dp"
+            android:text="@string/word_wrong_text2" />
+
+
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/button_show_links"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/button_submit"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:text="@string/button_show_links" />
+
+    <Button
+        android:id="@+id/button_submit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:text="@string/button_submit" />
+
+    <TextView
+        android:id="@+id/score_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/buttons_radiogroup"
+        android:layout_alignRight="@+id/buttons_radiogroup"
+        android:layout_alignTop="@+id/time_view"
+        android:layout_marginEnd="13dp"
+        android:layout_marginRight="13dp"
+        android:text="Score" />
+
+
+</RelativeLayout>
